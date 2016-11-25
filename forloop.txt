@@ -1,0 +1,11 @@
+lw r1,$0005
+lw r2,$0001
+lw r3,$0001
+lb2:slt r0,r1,r2
+beq r0,r3,lb1
+add r4,r2
+add r2,r3
+jmp lb2
+lb1:lw r9,$3832
+lea r11,r15,r9,1,
+End
